@@ -1,22 +1,18 @@
 <template>
-  <div id="app">
-    <UserDetails
-      name="John Doe"
-      address="1234 Main St"
-      dob="2000-01-01"
-    />
+<div id="app">
+    <UserDetails name="Devin" address="AI City" dob="2000-01-01" />
     <!-- You can add more UserDetails components for different users -->
-  </div>
+</div>
 </template>
 
 <script>
 import UserDetails from './components/UserDetails.vue';
 
 export default {
-  name: 'App',
-  components: {
-    UserDetails
-  }
+    name: 'App',
+    components: {
+        UserDetails
+    }
 }
 </script>
 

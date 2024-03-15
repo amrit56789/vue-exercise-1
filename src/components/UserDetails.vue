@@ -10,8 +10,6 @@
 </div>
 </template>
 
-  
-  
 <script>
 export default {
     name: 'UserDetails',
@@ -46,9 +44,38 @@ export default {
     }
 }
 </script>
-  
-  
+
 <style scoped>
+div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
 .error {
     color: red;
 }
