@@ -4,7 +4,7 @@
     <p>Address: {{ address }}</p>
     <p>DOB: {{ dob }}</p>
     <button @click="calculateAge">Calculate Age</button>
-    <p>Age: {{ calculatedAge }}</p>
+    <p v-if="calculatedAge !== null">Age: {{ calculatedAge }}</p><br />
     <button @click="checkAge">Check Age for Website Use</button>
     <p v-if="ageMessage" :class="{'error': isUnderage}">{{ ageMessage }}</p>
 </div>
@@ -59,7 +59,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 button {
@@ -70,6 +70,7 @@ button {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-bottom: 15px;
 }
 
 button:hover {
